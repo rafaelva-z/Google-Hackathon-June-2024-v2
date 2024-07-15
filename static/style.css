@@ -490,6 +490,38 @@ strong {
     flex-wrap: nowrap;
 }
 
+.alert, .alert-dismissibe {
+    width: 40% !important;
+    /* margin: 0 auto !important;  */
+    background-color: rgba(71, 255, 74, 0.26) !important;
+    padding: 13px !important;
+    border: 1px solid #e8e8ea !important;
+    opacity: 0.8 !important;
+    padding-left: 1.6rem !important;
+    position: fixed !important;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    z-index: 1050;
+    margin-top: 35px;
+}
+
+.alert-dismissible .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: .6rem !important;
+    opacity: 0.3 !important;
+    background: transparent var(--bs-btn-close-bg) center / 0.8em auto no-repeat !important;
+}
+
+.fade {
+    transition: opacity 1s ease-out !important;
+}
+
 @media (max-width: 1200px) {
     #cards-wrapper>div>div>button,
     #cards-wrapper>div>button {
